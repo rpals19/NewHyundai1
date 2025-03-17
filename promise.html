@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67c160f0f30f63190d856b38/1il5m5bko';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</head>
+
+<body>
+    <div id="overlay">
+        <img id="loading-image" src="assets/images/loading-logo.png" alt="Loading">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+    <div class="smooth-scroll">
+        <div class="container-fluid nav-bar border-style">
+            <div id="menuOverlay" onclick="closeNav()"></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul id="page-menu">
+                    <li class="profile-section sidebar">
+                        <a href="index.html">
+                            <div class="logo-header">
+                                <div class="img-div">
+                                    <img src="assets/images/header-logo-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="vr-line"></div>
+                                <div class="img-div">
+                                    <img src="assets/images/header-logo-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a class="hvr-efx1" onclick="closeNav()" href="">New Cars</a> -->
+
+                        <div class="dropdown-div">
+
+                            <a class="hvr-efx1 menu-a" href="#" role="button" id="newCar" data-bs-toggle="dropdown"
+                                aria-expanded="false"> <img src="assets/images/down-arrow.png" alt="">
+                                New Cars
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown " aria-labelledby="newCar">
+                                <li><a class="dropdown-item hvr-efx1" href="all-cars.html" onclick="closeNav()">All
+                                        cars</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">Sedan</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">Hatchback</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">SUV</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">N-line</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">Newly Launched</a>
+                                </li>
+                                <li><a class="dropdown-item hvr-efx1" href="#" onclick="closeNav()">Electric</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="service.html">Service</a>
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="exchange.html">Exchange</a>
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="insurance.html">Insurance</a>
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="finance.html">Finance</a>
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="visit-us.html">Visit Us</a>
+                    </li>
+                    <li>
+                        <!-- <a class="hvr-efx1" onclick="closeNav()" href="promise.html">H-Promise</a> -->
+                        <div class="dropdown-div">
+                            <a class="  hvr-efx1  menu-a " href="#" role="button" id="newCar" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/down-arrow.png" alt="">
+                                H-Promise
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown" aria-labelledby="newCar">
+                                <li><a class="dropdown-item hvr-efx1" href="promise.html">Hyundai Promise</a>
+                                </li>
+                                <li><a class="dropdown-item hvr-efx1" href="used-car.html">Buy Used Cars</a></li>
+                                <li><a class="dropdown-item hvr-efx1" href="sell_car.html">Sell Used Cars</a>
+                                </li>
+                                <li><a class="dropdown-item hvr-efx1" href="about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="hvr-efx1" onclick="closeNav()" href="blog.html">Blogs</a>
+                    </li>
+                    <li>
+                        <button class="loc-btn nav-block mob" data-bs-toggle="modal" data-bs-target="#locationModal">
+                            <div class="img-div"><img src="assets/images/down-arrow.png" alt="" claas="img-fluid"></div>
+                            Bangalore
+                            <div class="img-div"><img src="assets/images/loc-icon.png" alt="" claas="img-fluid"></div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <header class="block-header home-header down-fade-2">
+                <div class="container-custom">
+                    <div class="top-nav-container fade-down-4">
+                        <div class="row align-items-center m-0 ">
+                            <div class=" col-lg-2">
+                                <a href="index.html">
+                                    <div class="logo-header">
+                                        <div class="img-div">
+                                            <img src="assets/images/header-logo-1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="vr-line"></div>
+                                        <div class="img-div">
+                                            <img src="assets/images/header-logo-2.png" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="button_container" onclick="openNav()"><span class="top"></span><span
+                                        class="middle"></span><span class="bottom">
+                                    </span></div>
+                            </div>
+                            <div class=" col-lg-10 navlinks-button">
+                                <ul class="nav-block link-efx justify-content-center " id="page-menu1">
+                                    <li>
+                                        <div class="dropdown-div">
+                                            <img src="assets/images/down-arrow.png" alt=""> <a class="     " href="#"
+                                                role="button" id="newCar" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                New Cars
+                                            </a>
+                                            <ul class="dropdown-menu custom-dropdown " aria-labelledby="newCar">
+                                                <li><a class="dropdown-item" href="all-cars.html">All cars</a></li>
+                                                <li><a class="dropdown-item" href="#">Sedan</a></li>
+                                                <li><a class="dropdown-item" href="#">Hatchback</a></li>
+                                                <li><a class="dropdown-item" href="#">SUV</a></li>
+                                                <li><a class="dropdown-item" href="#">N-line</a></li>
+                                                <li><a class="dropdown-item" href="#">Newly Launched</a></li>
+                                                <li><a class="dropdown-item" href="#">Electric</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="" href="service.html">Service</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="exchange.html">Exchange</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="insurance.html">Insurance</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="finance.html">Finance</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="visit-us.html">Visit Us</a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-div">
+                                            <img src="assets/images/down-arrow.png" alt=""> <a class="     " href="#"
+                                                role="button" id="newCar" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                H-Promise
+                                            </a>
+                                            <ul class="dropdown-menu custom-dropdown" aria-labelledby="newCar">
+                                                <li><a class="dropdown-item" href="promise.html">Hyundai Promise</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="used-car.html">Buy Used Cars</a></li>
+                                                <li><a class="dropdown-item" href="sell_car.html">Sell Used Cars</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="" href="blog.html">Blogs</a>
+                                    </li>
+
+                                </ul>
+                                <button class="loc-btn nav-block " data-bs-toggle="modal"
+                                    data-bs-target="#locationModal">
+                                    <div class="img-div"><img src="assets/images/down-arrow.png" alt=""
+                                            claas="img-fluid"></div>
+                                    Bangalore
+                                    <div class="img-div"><img src="assets/images/loc-icon.png" alt="" claas="img-fluid">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="promise_main">
+            <section>
+                <div class="banner_main">
+                    <h1>Exclusive Prices, Quality <br>
+                        Assured & Rightfully Yours!</h1>
+                    <p>Find the car of your dreams with H-Promise at prices you can afford.</p>
+                </div>
+            </section>
+            <section>
+                <div class="why-hyundaii">
+                    <h2>Why Hyundai-Promise</h2>
+                    <p>Satisfied Consumers, Reputable Dealers, & Years of Trust!</p>
+                </div>
+
+                <div class="img-gallery">
+                    <div class="swiper" id="home-slider3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-card-div">
+                                    <div class="imge-1">
+                                        <div class="text-content">
+                                            147-Point Quality <br>
+                                            Check
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card-div">
+                                    <div class="imge-2">
+                                        <div class="text-content">
+                                            Hyundai Genuine <br>
+                                            Parts
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card-div">
+                                    <div class="imge-3">
+                                        <div class="text-content">
+                                            Best Prices
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-card-div">
+                                    <div class="imge-4">
+                                        <div class="text-content">
+                                            Comprehensive <br>
+                                            Warranty
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="hyundaii-promise-cars">
+                    <h2>Hyundai-Promise Cars</h2>
+                    <p>Choose from a range of genuine Hyundai used cars near you.</p>
+                </div>
+                <div class="card_listingCar">
+                    <div class="grid_card">
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="assets/images/carBlue.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="text-content">
+                                <h2>Hyundai I20 N Line</h2>
+                                <p>₹9,65,000</p>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"> <img src="assets/images/doc.png" alt="" class="img-fluid"> </div>
+                                <div class="text_div">Registered in: 2021</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/speed.png" alt="" class="img-fluid"></div>
+                                <div class="text_div">28,651 kilometer driven</div>
+                            </div>
+                            <div class="grey_div">
+                                <div class="img-div"><img src="assets/images/location.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text_div"> Located in Bangalore</div>
+                            </div>
+                            <div class="btn_div">
+                                <button class="btn">Contact Dealer Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="faq_section">
+                    <div class="faq_grid">
+                        <div class="faq">
+                            <div class="faqHead">
+                                <h2>FAQ's</h2>
+                                <p>Take a look at questions asked frequently by our customers.</p>
+                            </div>
+                            <div class="faq_card">
+                                <div class="faq-question">
+                                    1. Which cars are sold under the H-Promise Approved Car Program?<span
+                                        class="faq-icon"><img src="assets/images/down_arrow.png" alt="" class="img-fluid"></span>
+                                </div>
+                                <div class="faq-answer">
+                                    Hyundai cars up to 10 years old, non-accidental, and less than 100,000 Kms driven
+                                    are
+                                    sold under the Approved Used Car Program.
+                                </div>
+                            </div>
+                            <div class="faq_card">
+                                <div class="faq-question">
+                                    2. How and where is the refurbishment of approved used cars done?<span
+                                        class="faq-icon"><img src="assets/images/down_arrow.png" alt="" class="img-fluid"></span>
+                                </div>
+                                <div class="faq-answer">
+                                    Hyundai cars up to 10 years old, non-accidental, and less than 100,000 Kms driven
+                                    are
+                                    sold under the Approved Used Car Program.
+                                </div>
+                            </div>
+                            <div class="faq_card">
+                                <div class="faq-question">
+                                    3. Is there any financing facility on the approved used cars?<span
+                                        class="faq-icon"><img src="assets/images/down_arrow.png" alt="" class="img-fluid"></span>
+                                </div>
+                                <div class="faq-answer">
+                                    Hyundai cars up to 10 years old, non-accidental, and less than 100,000 Kms driven
+                                    are
+                                    sold under the Approved Used Car Program.
+                                </div>
+                            </div>
+                            <div class="faq_card">
+                                <div class="faq-question">
+                                    4. What does an H-Promise Approved Used Car mean?<span class="faq-icon"><img
+                                            src="assets/images/down_arrow.png" alt="" class="img-fluid"></span>
+                                </div>
+                                <div class="faq-answer">
+                                    Hyundai cars up to 10 years old, non-accidental, and less than 100,000 Kms driven
+                                    are
+                                    sold under the Approved Used Car Program.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contanct_us">
+                            <div class="contact_card">
+                                <div class="head">
+                                    <h4>Hyundai-Promise Cars</h4>
+                                    <p>Send us your query and we will get back to you soon.</p>
+                                </div>
+                                <div class="formdiv">
+                                    <div class="grid_child">
+                                        <input type="text" class="form_input" placeholder="Name">
+                                    </div>
+                                    <div class="grid_child">
+                                        <input type="text" class="form_input" placeholder="+91-Mobile no">
+                                    </div>
+                                    <div class="grid_child">
+                                        <input type="text" class="form_input" placeholder="Email ID">
+                                    </div>
+                                    <div class="grid_child">
+                                        <textarea class="form_input" placeholder="Enter any comments"
+                                            rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="check_box_div">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="car">
+                                    <label for="vehicle1">I agree to receive calls and messages
+                                        from Lakshmi Hyundai Team.*</label><br>
+                                </div>
+                                <div class="btn_div">
+                                    <button class="btn">Enquire Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="footer-block">
+            <div class="footer-form-section">
+                <div class="footer-form-head">
+                    <h5>Find a Lakshmi Hyundai Showroom Near You!</h5>
+                </div>
+
+                <form>
+                    <div class="form-input-div">
+                        <input type="text" class="footer-input"
+                            placeholder="Enter city or pin code to locate the nearest showroom/service center">
+
+                        <button class="footer-btn">Locate Now</button>
+                    </div>
+                </form>
+
+                <hr class="footer-hr">
+
+            </div>
+            <div class="footer-main">
+                <div class="img-section-footer">
+                    <div class="img-logo">
+                        <a href="index.html"><img src="assets/images/footer-logo.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="para-div">
+                        <a href="">
+                            <p>1043/105, Kodigehalli Bus Stop Hebbal, Near Kodigehalli signal Bengaluru, Karnataka
+                                560092
+                            </p>
+                        </a>
+                    </div>
+
+
+                    <div class="img-icon-section">
+                        <div class="img-icons">
+                            <div class="img-div">
+                                <a href=""> <img src="assets/images/facebook-icon.png" alt=""> </a>
+                            </div>
+                            <div class="img-div">
+                                <a href=""> <img src="assets/images/twitter-icon.png" alt=""></a>
+                            </div>
+                            <div class="img-div">
+                                <a href=""> <img src="assets/images/instagram-icon.png" alt=""></a>
+                            </div>
+                            <div class="img-div">
+                                <a href=""> <img src="assets/images/linkedin-icon.png" alt=""></a>
+                            </div>
+                            <div class="img-div">
+                                <a href=""> <img src="assets/images/youtube-icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-child-1">
+                    <h4>All Hyundai cars</h4>
+                    <a href="all-cars.html">Hyundai Aura </a>
+                    <a href="all-cars.html">Hyundai Creta</a>
+                    <a href="all-cars.html">Hyundai I20</a>
+                    <a href="all-cars.html">Hyundai Verna</a>
+                    <a href="all-cars.html">Hyundai Alcazar</a>
+                    <a href="all-cars.html">Hyundai Kona Electric</a>
+                    <a href="all-cars.html">Hyundai Venue</a>
+                    <a href="all-cars.html">Hyundai Tucson</a>
+                    <a href="all-cars.html">Hyundai I20 N Line</a>
+                    <a href="all-cars.html">Hyundai Venue N line</a>
+                    <a href="all-cars.html">Hyundai Grand i10 NIOS</a>
+                    <a href="all-cars.html">Hyundai Exter</a>
+                    <a href="all-cars.html">Hyundai Ioniq 5</a>
+                    <a href="all-cars.html">Hyundai Creta N Line</a>
+
+                </div>
+
+                <div class="footer-child-2">
+                    <div class="footer-child-2-child2">
+                        <h4>Our Services</h4>
+                        <a href="service.html">
+                            <p>Service your car</p>
+                        </a>
+                        <a href="car-detail.html">
+                            <p>Test drive a car</p>
+                        </a>
+                        <a href="finance.html">
+                            <p>Finance a car</p>
+                        </a>
+                        <a href="exchange.html">
+                            <p>Exchange your car</p>
+                        </a>
+                        <a href="insurance.html">
+                            <p>Insure your car</p>
+                        </a>
+                        <a href="promise.html">
+                            <p>H-Promise</p>
+                        </a>
+                    </div>
+                    <!-- <div class="footer-child-2-child">
+                    <h4>Legal</h4>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                </div> -->
+                </div>
+
+
+
+
+
+                <div class="footer-child-2">
+                    <div class="footer-child-2-child2">
+                        <h4>Quick Links</h4>
+                        <a href="about.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="contact-us.html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="blog.html">
+                            <p>Blogs</p>
+                        </a>
+                        <a href="feedback.html">
+                            <p>Feedback Form</p>
+                        </a>
+                    </div>
+                    <!-- <div class="footer-child-2-child">
+                    <h4>Legal</h4>
+                    <p>Terms of service</p>
+                    <p>Privacy Policy</p>
+                </div> -->
+                </div>
+
+            </div>
+
+            <div class="copyrights text-white">
+                <div class="foottext">
+                    <div class="copyright">
+                        <p>© 2025 Lakshmi Hyundai. All rights reserved.</p>
+                    </div>
+
+                    <div class="copyright">
+                        <a href="http://saihasoft.com/" target="_blank" class="saihasoft-link">Created by Saihasoftware
+                            technologies Pvt Ltd.</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/promise.js"></script>
+
+    <div id="modal-container"></div>
+    <div id="whatsapp-section"></div>
+
+</body>
+
+</html>
